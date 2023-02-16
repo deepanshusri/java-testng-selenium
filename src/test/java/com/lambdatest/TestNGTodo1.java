@@ -21,7 +21,7 @@ public class TestNGTodo1 {
     @BeforeMethod
     public void setup(Method m, ITestContext ctx) throws MalformedURLException {
         String username = "deepanshulambdatest";
-        String authkey = "rsoHTTxvRGQOV7jvQJJwPzKYQSyXYHKqC3SOgIWgKJ9G9sWZbk";
+        String authkey = "f8xr8eV7hpJJixO6sbVmPazAH4C8VoAUhEANPjikayLTXNlJKs";
         ;
         String hub = "@hub.lambdatest.com/wd/hub";
 
