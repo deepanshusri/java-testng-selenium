@@ -14,8 +14,8 @@ pipeline {
             steps {
                 // Build your Java project
                 // For example, using Apache Maven
-                bat 'mvn clean package'
-                bat 'mvn install'
+                sh 'mvn clean package'
+                sh 'mvn install'
             }
         }
         
@@ -24,7 +24,7 @@ pipeline {
                 // Run tests for your Java project
                 // For example, using Apache Maven
                // bat 'mvn test'
-                bat 'mvn test -D suite=single.xml'
+                sh 'mvn test -D suite=single.xml'
             }
         }
         
@@ -32,8 +32,8 @@ pipeline {
             steps {
                 // Deploy your Java project to a server or a container
                 // For example, using Docker
-                bat 'docker build -t your-image .'
-                bat 'docker run -d -p 8080:8080 your-image'
+                sh 'docker build -t your-image .'
+                sh 'docker run -d -p 8080:8080 your-image'
             }
         }
     }
